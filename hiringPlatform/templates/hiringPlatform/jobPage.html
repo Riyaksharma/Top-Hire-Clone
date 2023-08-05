@@ -1,0 +1,72 @@
+{% extends 'hiringPlatform/layouts/main.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="">
+                <div class="card mt-3 shadow">
+                    <div class="card-body">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <div>
+                                <h4> Select Your Preferences </h4>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="">Job Roles:</label>
+                                {{form.interested_roles}}
+                                {% if forms.errors.interested_roles %}
+                                <label class="text-danger">
+                                    {{forms.errors.interested_roles}}
+                                </label>
+                                {% endif %}
+
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Your current CTC</label>
+                                {{form.current_CTC}}
+                                {% if forms.errors.current_CTC %}
+                                <label class="text-danger">
+                                    {{forms.errors.current_CTC}}
+                                </label>
+                                {% endif %}
+
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Your expected CTC:</label>
+                                {{form.expected_CTC}}
+                                {% if forms.errors.expected_CTC %}
+                                <label class="text-danger">
+                                    {{forms.errors.expected_CTC}}
+                                </label>
+                                {% endif %}
+
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Your pref location:</label>
+                                {{form.location_pref}}
+                                {% if forms.errors.location_pref %}
+                                <label class="text-danger">
+                                    {{forms.errors.location_pref}}
+                                </label>
+                                {% endif %}
+
+                            </div>
+                            <br>
+
+                            <button type="submit" class="btn float-end shadow btn-success px-4"> Save </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

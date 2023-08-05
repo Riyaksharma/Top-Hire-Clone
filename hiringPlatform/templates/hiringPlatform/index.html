@@ -1,0 +1,154 @@
+{% extends 'hiringPlatform/layouts/main.html' %}
+
+{% block content %}
+<div style="margin: 0; display: flex; justify-content: center; align-items: center; height: 60vh;">
+    <div style="text-align: center; max-width: 50%;">
+        <h5 style=" color: brown;">
+            The client Portal for BurnHoll
+        </h5>
+        <h1>Make Candidate submission your competive advantage</h1>
+        <hr class="divider">
+        <button type="submit" class="btn shadow btn-success px-4" style="background-color: #6f42c1;">
+            <a href="{% url 'demo' %}" class="nav-link">
+                Book A Demo
+            </a>
+
+        </button>
+    </div>
+</div>
+
+<style>
+    .outer-container {
+        margin: 30px;
+        background-color: #6f42c1;
+        border-radius: 15px;
+        /* To center the inner divs horizontally */
+        display: flex;
+        /* Use flexbox to arrange the divs side by side */
+    }
+
+    .left-div {
+        color: white;
+        padding: 20px;
+        flex: 1;
+        /* Allow the div to grow and take available space */
+        text-align: left;
+    }
+
+    .right-div {
+        padding: 20px;
+        flex: 1;
+        color: white;
+    }
+
+    /* Optional: Set a minimum height for the outer container to prevent it from collapsing when no content */
+    .outer-container {
+        min-height: 100px;
+        /* Adjust the value as needed */
+    }
+</style>
+
+<div class="outer-container">
+    <div class="left-div">
+        <h4>
+            Say GoodBye to back and forth email attachments
+        </h4>
+
+        <br>
+        <br>
+        <p>
+            Say hello to a new era of candidate presentation.
+            With Candidately, forward thinking staffing teams create beautifully branded candidate submissions that
+            clients can
+            access anywhere and anytime.
+        </p>
+        <button type="submit" class="btn shadow btn-success px-4" style="background-color: #ffffff; color: #6f42c1;">
+            <a href="{% url 'demo' %}" class="nav-link">
+                Book A Demo
+            </a>
+        </button>
+    </div>
+
+    <div class="right-div">
+        <h4>
+            Lightning fast submissions, right from within Bullhorn
+        </h4>
+        <br>
+        <br>
+        <p>
+            Give your team back their time on creating candidate submittals. Simply pick a candidate from within
+            Bullhorn and share
+            a link with your clients. As easy as sharing a Dropbox folder or Google document.
+        </p>
+    </div>
+</div>
+
+<div class="outer-container" style="background-color: #dccef7;">
+    <div class="left-div" style="color: black;">
+        <h4>
+            Get Candidately for your Bullhorn account today.
+        </h4>
+
+        <br>
+        <br>
+        <p>
+            Make candidate submissions your competitive advantage and start making more placements now. No
+            implementation costs.
+            Simple month to month pricing and a 30-day money back guarantee.
+        </p>
+        <button type="submit" class="btn shadow btn-success px-4" style="background-color: #d35810; color: #ffffff;">
+            <a href="{% url 'demo' %}" class="nav-link">
+                Get Started
+            </a>
+        </button>
+    </div>
+
+    <div class="right-div">
+        <div class="outer-container" style="background-color: white;">
+            <div class="left-div" style="color: black;">
+                <h1>
+                    Pricing
+                </h1>
+                <h2 style="color: #6f42c1;">
+                    $39 / month
+                </h2>
+                <ul style="list-style: none;">
+                    <li>
+                        BullHorn Integration
+                    </li>
+                    <li>
+                        Custom Branding
+                    </li>
+                    <li>
+                        Custom fields
+                    </li>
+                    <li>
+                        Automation
+                    </li>
+                </ul>
+                <button type="submit" class="btn shadow btn-success px-4" style="background-color: #6f42c1;">
+                    <a href="{% url 'demo' %}" class="nav-link">
+                        Learn More
+                    </a>
+
+                </button>
+
+
+            </div>
+            <div class="right-div" style="color: black;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAC+CAMAAAARDgovAAACHFBMVEX/XDn///8AYLjy+f0AIHb/xjIAGFmZx/MAdOIAuuz4/f4AKp0AFmn0WjkSXbOMuO8AbuHgXEMAAFUAHnby//8AAFEAG3nNT0f/XjQAYLwAKoZ1PHLoXj5BTXoAN4lMP34GKn3A3Pet0vXP5fkAJG8AHm0AVLQAUrPxXD7M4/nq9fzb7PoAdesAWbb/XC0AEVujzfT/TyTCydTXT0IAHl0ACSX/XCvBXE17oczNXEn/6+eQwvL/zC//jXj/TR//zMP2m5ztgIL/mon/fGP/7ur/uKzy6+/vtrnx29/sYWP/VDnQXEhQhcf/q53/dFv/29T/u6//aUr/08uOXoWAXowaarxxm9BdX5sLOX/uoqXrP0DrWVrx3uH3kY1dkMw4X6NFJlTsdHbwyc2mudHxx2JBcdB0a6sAAGm7ZHcAHJkAE0j/ojS8XWX/cTeQsdrUXVp9OmC0SFE/K2xro+tJj+c6esMoQn3qLi7oAACOO0v6f3LPa2zPgYrrSUrAR0CXZX1qMFBbQWl1Wny3eIjgkJc0IlVcNFqSO0uoXnp9NkyMXozKycRtZGF2ZlXXb0DSyLDlx4RisblrnrmXqLLGeXU5rtffvWW7u4uqhYyLtaJ2m7X1xlBubbengzPDnEPHvXKfgU2ds45ss7CVaqapiZQXotZ0NmWgi28YH5IADzn/tjPBlFhLNoj/jjbCT1madmxdS4QAE6NyRW3vlTs5u+bXAAAVhUlEQVR4nO3djXsTR3oA8PUKGyyQD+ENrByHnGyQZMlaIeT6CDZGYLAN/gBjy65NsDG6EHOADGmdFAiYjzOYXJK7yx3p9cil116ba2lD2+Qf7MzsrrQzO7M7u1p9PQ9v7jlhIwnNb2fmnS+vhaY3oYZQ6w9QN/FGQo83Enq8kdDjjYQebyT08Ezi3PHJY8PDU1PTU1PDw8cmzx8/d8qrt65OeCFx6sLk1FA6rciyoIYsK+l0emhInjp2cvL4uaMNYVK+xIVjQloRGIFI0vL0tFpNjnrwiSsVZUqcmhTSMovBbDI0pEwPn0QmdVdPypI4elJJczHgJNBEEaZR07lQN91JGRKnjg0xWwV/NUkPpWHTOV3zauJeYlIpz8FsIgSma5h1XEr4z007bxfcJkNDwjRoOucvVLOeuJIIz61WxgEjKXUnp49fqDyJc4nEkVBbxruGwWNSle7EqUR4PRmZD/AlzgqZVKg7cSaRz0VDodlqVggrE9CdTHnXnTiRCK9HRDE0UwcQpcBGJ+fLGZ3wS8SXoiEI0V/rwjNC607AIBZ0sS5EuCXyyaQIIOqhadgFNBGmT553NsvhlPBNgIYBIObrtUaYQ0kPTZ12gMEnkcglEcRyjZKG20inh497KhGOhEQUsVoXzXmkhdPeSeQjqkNorcGqhBppgatecEgUohpEfeVPB5GeOueFRBEi16gQINLHbNOqrUSXBkFvG7IcqHrIbtqoIlwoUyIc0SFoI4nYrYPb2qsc27a9nXFjkZ4sSyKeFHUJSt7IbIMfrNrR3r73tiuKY2VI+NdDIru7jG2rgQOKvftcSICO06qzsJaYK1YJylBCvlUriG3tH7nK58q0BYWlRDgqWlQJ4UDNJLbtdTfGkwNsCisJX0606iUCtYNw2TwAxbQriVLboM68VIldVY+DZUgI8pQLiUSkVCVuUNolkki1VTvEv20vQ4KdQSwkJkrdZVuA8p6qxI7qxO7eHbt39ILHHTvKkxDSjBkZW6InWqoS87SBdjUldnd17/4739/viP9kd7kSQpo+CWFLFIcSjMZRZYmEKjFQvoQQcCbRXeolxBA1e6sSu6sdvWVLpE86klgq9RKhZeosFEns+UnV4+NyJYQhWvtgSfiShirxGVviLX/V45295UoItFEFSyJvlKB2E5qEr+rhgUT6PL/ERMggkaG+XQNL0CoFQyJuqBJiG32Q38gSlEEFQyKMSdAnftWVkDyVoFQKhsScsZugjquqKzEytnDFU4m0ab2bIZET60piJPvJPyzotcITCdk0/aBLxKNGCcZeaDXrhLRy31sJYYjcKKRLhCP1JSGdGB0b9VbC1GfSJQrJupKQFrKSb0T/yhsJgVyooEvM1ZWENHpGMnzpkYRylEfCMA+tfY8pjd03QnglQY4z6RLG1FFziZFF/Guv6sRJHgmxniQWR/CvPZIgB1dUCR8mITLOj1RHQrp4RcK/45XEkHOJWs47pJVRAsIzifQFewk/LiEGayYhLVwiIbyTOG0vgfcTYmitVhLS2EUTBEVCpi292wYx4OaSWK3ZSs0i5XsmielLdy9NMTdK2TuoUxwSOVxipkYS0v33zVWCIpEFwaAItNyJsSymOSSwkRVrkFlxCTDboEDQ+om7l7LZe0FaiTOpVMvTBwyKU/YSS0lMwmJt27kEWbgRWmnRE0dX9L/yg//g/1gSgjL9aSp1m/YpgURLqo/akeBbQHSJI5iEKFJP5rqTGFkxWkgj9y+eYFi8Xxxk+8NdMBJsCUF+kGpJXe40VQvl0kbfW6nUQ1p9wVdr6BJ5XCJEg3AnMbI4ulhq/NLo4oh0hWHxSXFs6e/aDmKg28+WEOR9LeDiPyNLDPuQJ49Sm7RKgZ+84lifABLjnkksjoFqoDd/KXsG/j/VQjpTGluqEtstJUCXACku46NA+S7sTZ/suUwrAD7z4FizstwXdShxf0yCPeEKKqvvor4OZbKQRlYWSl/zSQixTWDRh3WPgU+hxMYjahciDNtL+InWseWRBILQGoX0/qJhRiGNnSlZSL6s8e94JYTAZdQ93i6NIfY9fgLrxA+MRGovQQ4oqGnUuYQGAYr6/idXoIbxL6UrmoXkW1gclYx/xyshCE9TsIm0PNPHEGtPPt3Y2HhC37rC52AMiSV8QME+P+FAAp9VrqyYn4DqhTR6f5RItfwSwnNIASweqhaxxxszjx+PM6pE+qi9xBzePNpo7+NUAp9eS7R0AS0uLpQc4gkYcQcScudlZNGSeohS6uvHjx/Tt3UFIo0yJArEgKKzXAnQPVIHjGYLQ33whwdghB1IAIvbLapFy/OgICsrn/5ymvVUbDbK2g0k0ujFMiVAHznGA4GHP4wEnEkIcuyhRgEG2s/BOHyKNQvD0ihDIkEkD+bZOy4JaeRM1jTKrpgEsMhsahYte55kf9nX9/Q2rVLjaZS1Vx7CJWhplFsC9IGsCqGeDfFaAsQznSL1qA+m1hT1BdP2EuQKBS2NckpIIxezRYeE2gXqX8YPoYjTX1mOhHy7SKE+bFKfdspegpiX02ajfBLSgmGRwd+FusAevRbEUQkHKiAhFCV0ENqYwphGWRJkGmWdVraTkLInzINFDok4+M9biWc0iQv2EkQaDbmsEzgEUyJ+CM66DxWf1oO+31WOxDNCouUppaszplGWBJlGKcvbHBIEBFsCPW73UEI2SbRQJIxplCWRsJ+N2kuQECWJLtRTJnykhJpKvJB4TkKkKInUuLzNPI9J1AlKGrWVMEDE1ShKHEICJokEAuryQuKhSYK2mjltL+G3n43aSRggiGEzS8KfGIAPh7yQeGqSeE5pHkP2EtiBTPpslJSQmBBkEmBLbPdM4jIpQe0yDWeMmBJEGqXsEhMS0oJxvUEaWTlhnEpVXWLTJNFCWcs0pFGmBJFGKbvEpMTo/RNj6lxbksZW1Dm4Pq2utcTmJn1sZThOwpTIE12m+W1MrUO6AssvwbWWFdXE34P6B7JI1ZDAq8NlkFRp+yHKpL1ENyFxz9Q8KD2mNHJicXThk6zeTvzd1CJVQSKGSzwMgOEFZdPDkEaZEnHbRV1q7pBGFgxrTrWTyOADq+eoB6V0mVP2EuRs1PwzHowsalyWq53EA0widVu+k2rpoy0tnLKXIAYU5jTKMdqunQQ+2E49gKNvmkTpLCJbAt8lFnOm2SgmoS48FAnUnJGomQQxxEztg/umtNZR2iVmS9jORo0S8e0oSRSn1wn05SFvJXriicMg3tl18GC7XZ3AB1YggWYYEuftJcg0apqNYnVCK5K+HKcPm72TGCgcyR8+rEvsspEI9OESMZRMaK1j0l6ih5Aw3ZyFJhFH2/tdHks0dRWOgNAkPt6za9eHNhIxPHWkwLc2qRKlNMqWIHeJTYetqBJqkTyWGEEQmsSvPv/8iy8+//JmTO5n30JoHyEhoykZbbF/yl6COJRpPmxVLYmB/GEkMZc//OvfvGxuHlTjty+++kOAdYtrcu0OSDxPpajHSewlyEVdUxqtkgTsH6DE3O++HhxsLsZgK4yvfq9QLTJv4YNt8KR9jx7Rnjp0yl5iyWY2SssdcfSwPa7mju3+bn3eoa9PaGvb2wfgC4DEAPyD9rIBv/4yMF0BQPBl21GrKACHnxsYYLSq8eL3tHoRCIWSICLJyH4Y8A4/cvYSrTUV06iFBHHYKkfORs3jie64r1sdV8ThY3fpMaE++tXHuE9/7EahPi3RrT/dH0ffhk/Pgzh8OH/4a8Kh+etWPV6MU9ZO8B/Qh3lvKpulbZAWd4ktJMjDVmQarcbJVDVbHP51MxmD/9haij+Y7vQc+MAkcTebHaZIFNOohYRdGq2ChAbxG7JCAIl/Mki0/tHUcnEJuJg7fCk7RZEoplGru7MQdYJMo5WXSKgQZA+BJH5rlGh9QX42s0TgbpYCUUqjFhLkYSsyjVZcIq5CvDQ7gHjRilPgS3MKLoG6OFqNEErL21b3LrKZjWoSzJ3uMsOvtY2fUyFethLxApsh9n9jhPjA6i6O8il7CXx5W1wmZqNI4uCeisVbKP5EaRpY6ij2FcaP13/VKPGN1d1/9TRqJWFzZrnCd/ZqPwhi7+d0CCx1aPHEcOVxiauWEsftJch5ObGdVmEJCLGrj+oAJP7VLNFq+Hy4BP2eKrrEpL0EuUtM/OhPFSQ+/JZeJcjUocZXpUuvqBJab2F521t9l9hKgtwlJtJo5SV2vcOA0GYdZJTW3zWJGY46oR+2srwDIHHYaqaaEpZVwpw61EpRHGuqEr2rPBKyvQS5S0yk0YpL7HqH4dDc/M9UidbizxxoEvfUYcVfLCWG7CXIXeLlKkt8+Gdm4/gXusTv9E+o/AVJXFQ7CutfJqClUUsJYpc4h4/jKi9BH12yUkerYdCtSuwIqg9XrSWO20uQZ5bxeXlFJWDj+JhVJUxjbVPz0CRiMzwSp+0lyDSKL6NWXOIL5xL/ppVZmUUE8mqv7chKT6OWEuQuMZ5GA5W8tbJlN8FIHa2lIYXyGZpv9J/hkNDm5ZYS5C4xnkbljyos8S2zSjBSB+go0rhE0H7eoc/Lre8yjXcTxGEr+VlHZSXYHSYjdYDA6sQ3/TGvJKzPLMsfdVTMAg6smFWCOtZWI2aUuNqvrlPYSExzSMzZ/ATt2x0Vi4PbDrAlzB3mv2uhLbYqM+rYst8rCXI2Sp7ZkjN33uaNAzZBPP27726xJf66c2dHx86dO/8DxDUsMgaJ3i1FnZN+UL5EFyFhvhGFzB1/YxOdplcwJZoHX777fzupYawTvauy3nOWLcFxZpk35L6WX2Dxn0SYT4azJYDFn69do0no/QSSWJOVrV5vJHxEndgoS8IyzGcEz76ypGh+TKsW+sgKSQQF+QaHBE/u8PH8BG3FJK5bSQCL/9ppqhb/rV0qVBd6QQUJ9tqt6HKNrHjOLFdQ4nv2aFuvFiTFLU0CDbOhRD+SsKzKPKNt8y6xawgXEsJNGwlg8W0HZnHttUkC9ZiWn4xnBmY3G62wxFk7CFgt/gej0NO8fG+HJpGDEpb3NtLObttIkLvEjB9Vr5CETUehVQtDQtW7CUFe0yXQgMLyAmonKGwkyNmo+zTqQoKjeUCKwb8WE+rr4scLahLqgMJSgmMdE0Tc/kd/KihhnUdLFi//V60WHaVPF9MkZDSgoN+kTftgx7gkmojW4T6NupKwyx5FC5RQrxnWT2RdYs1OQj+RaSdBDCjIvdHKSvBWCkDxCoyzOgyv7NckhAxsHbQbBBQljvJJEGmU/vsrKiYh3OSUQAnVeNSlKIGayUWLjx2M80mQs1H6zQArJnH2Omf7ABTXzxpeCKfjSAKuUPSeYUvIWwk+CfLMsusu016C+s7c7aP5FfY6OI5AEvAkRa/FL0btX+aUIA9buRxvy/JrtAzFjl236Hfqs5ib43ETL+A3ep24CvfC2BKZCKcEkUbdjTJl4faBvXbrde17v6Pdw+8sZ1dx8yz2MjiiUiXArLSXPQxSZnkliDPLbsZWsvDswF6OZfD29r2035fJR0FAoK0fJAFnIL30G3zCCIhJTgliUddF85Bv/7Tjp7zR8bZ5inBWtu0rXskEhEECDCh6mb2bvBESOXMHcWcrEA7v1Crf2e8o3g1Q/gHrDDL4yvwK1ChQSw5YSohizscpQR62YmYP9Jtxzd8OOoPYv/+HziCKzs7OWEx7x7PfN1tYfE9WCEEdZasS/RaHapSZkLjexClBzEZpJ9lj2mfHolON2C2nEvvJdwNvAloIq1oMXje1DCSxWpT4YEcv6yhJEFzZCV6JHjJ5kH0mjcFQjB/edRrU9wmcFa6b68Vg84+g4sAgK6S8FoqomxIgO0QYPWb/fEhMzvFKJEwSxNzDWkKvGw5Cfd34e+/9DMR7WgRhcb8EGEUN8KfrXwYzwfFx+PfjMOA/B01igc4Hz1Oph+CtOn925xepFkP1MngBLVFM5nkl/KSEOZHGYp02HM4DMegU4/p3M5nOH3+8/grE9R+BQsb4RD3gk5/19fU93XwKPOEfLm+OG9+6OCIKtIHSRLt5JZpICFAp2NkZRcwyyF5VfUGnARP1L+CJxZfgdcb4bbX6jOs1wlgFiSehClHsgvW2AST0ctpLTJBpFKSPBv5t9sVQtmDBih0mhwSZRmG4X9itm0CdBOgmCvwSeVNHUda+R52EnFGLos86eCSIvVGVYrXRKWI5tdHniuW0lyB2BDWKfe53SOshYssqRPKIAwlKlwkkqL+juVFCDmgQYrTYOHgkyH0wlYJ+r/6GCDnYpkGE1kvF5JCgdRTl7ZvXNpQ1Ua/lkbAjiSZaR9G4FMpqqbXnDKXkkaA2jwalkOXZEkQkbyglj0ScLtGIFMpam6H/N1YJLommCRbFfGPlUjkwGzJAGHsJTokeap8JKZapv1KmPkMWtkTjgCA5gRWSS6IpRxlSqBTijQZpIUpgow0vhWEswS8RNs89Si0kUP/VQu4PzorE1YwU8DLySZBr/RhFW51XC1mO3ZgPkQVIrhNF5JRg9hRqtcjUp4UsK4qwNgMYzBcyFHcnwUwf6ruGZoP0+8VUo7SlUFCAPwhwKSyWubE1uyzSGMi84UQizm4eqsX8Wn/lLPCiKv0gFAFuLoyvra29vrG6urUxA2J2dvbq1fllELkc/EwhugKIaMFUQl6JprxV+0AWy1sBRXZ9qIB2YdESZzCzb+3ejRurW1tbM5/Nzs7Dkuba2tq0f5UW1p8U1ogj5gJyS1i3D/VTifNba7KFBnFp4bVV5EBMv7Q30KWFF3aeuLCOi2oDsUQpH7+EjzmoMGJAjXvBgKCXVru2MXBt962taZd2Bl7aeXRpi6/zurQWkaRBOJBo6rZpHyWNkJhbnr8KQq3KzGtbucJaRXSOWjwHEk1d7PGVKWpdXHaQIyo3Ek0FvlpRzxHCZuKuJZoKDmpFXUYyl2CVzZlEo9eK6JyPWTSHErR9oIaJSC5sUTKnEmBaWnd9IF8kkwW/VcEcSzQlcnZDrHqMpHiE3TBcSjT5lxqtswhFxIKNgysJ0FmEGqhaJCPJiS6OQrmSaIrPRRuhtwglI9HkUp6ZOD2QAEPv9brrOUPqHWO1AAa59bl8t31RypQASWS9+vUCDd/1oiYjkUg0EkUBLktufX1iaW7uyJECiHxXuDtu2zV4JAEsJpKV6C8M11YtbTSSBOZgIrcOCjuxBIsLyprPh8M93d2JuMMSV0IC9BeFXDTpvGZglxZFVLu0SVBgWNrSpQ3DmwzD36Dl81kOB8qO8iRAJAoTQINWOYzXVru0SdOlLaBL29MNf8GkF+VxH2VLgPAlugpLuagxitcWlbYALm2PemUrfmldhxcSWvjV39oRr9ei2oSHEg0e/w/sExL4gWaLAQAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock content %}
